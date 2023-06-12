@@ -2,12 +2,12 @@
 
 ## Description
 
-This repository contains the material for the SAP d-com 2023 session called *<TOPIC>*.
+This repository contains the material for the SAP d-com 2023 session called *CAP - getting started*.
 
 ## Prerequisite
 
-- If your topic requires them. Mention `None` if there aren't any.
-
+- User credentials for accessing the SAP Business Application Studio.
+- A internet browser. Preferrably Google Chrome. 
 
 ## Overview
 
