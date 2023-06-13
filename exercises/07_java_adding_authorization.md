@@ -49,7 +49,16 @@ cds:
       - admin
 ```
 
-You can check the access to the application by using these credentials now.
+Addtionally, you need to add the Spring Boot Security starter module to the `<dependencies>` section in the `pom.xml` fil` in the `srv` folder of your application:
+
+```xml
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+```
+
+You can check the access to the application by using the new credentials (username: admin1 and password: abcd) now.
 <br/>
 
 To learn more about Authorization and Authentication methods, you can refer [here](https://cap.cloud.sap/docs/guides/authorization#prerequisite-authentication)
