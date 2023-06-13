@@ -52,30 +52,46 @@ The application is reloaded, open the url mentioned in the terminal in your brow
 
 You can add custom code to deal with the specific domain logic of your application.
 
-- Create file `incidents-service.js` in `srv` folder and add the following content:
+- Create a new folder `handler` in the `srv/src/main/java/customer/incidents` folder.
+- Create a new file `IncidentUrgencyHandler.java` in that folder and add the following content:
 
-```js
-const cds = require('@sap/cds')
+```java
+package customer.incidents.handler;
 
-class IncidentsService extends cds.ApplicationService {
-  /** Registering custom event handlers */
-  init() {
-    this.before("UPDATE", "Incidents", (req) => this.onUpdate(req));
-    this.after("READ", "Incidents", (data) => this.changeUrgencyDueToSubject(data));
 
-    return super.init();
-  }
+import java.util.List;
+import java.util.Locale;
 
-  changeUrgencyDueToSubject(data) {
-    if (data) {
-      const incidents = Array.isArray(data) ? data : [data];
-      incidents.forEach((incident) => {
-        if (incident.title?.toLowerCase().includes("urgent")) {
-          incident.urgency = { code: "H", descr: "high" };
-        }
-      });
-    }
-  }
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
+
+import com.sap.cds.services.cds.CqnService;
+import com.sap.cds.services.handler.EventHandler;
+import com.sap.cds.services.handler.annotations.After;
+import com.sap.cds.services.handler.annotations.ServiceName;
+
+import cds.gen.incidentsservice.Incidents;
+import cds.gen.incidentsservice.IncidentsService_;
+import cds.gen.incidentsservice.Incidents_;
+
+@Component
+@ServiceName(IncidentsService_.CDS_NAME)  
+public class IncidentUrgencyHandler implements EventHandler {
+	private static final Logger logger = LoggerFactory.getLogger(IncidentUrgencyHandler.class);
+	
+	@After(event = CqnService.EVENT_READ)  
+	public void ensureHighUrgencyForIncidentsWithUrgentInTitle(List<Incidents> incidents) {  
+		for (Incidents incident : incidents) { 
+			if (incident.getTitle().toLowerCase(Locale.ENGLISH).contains("urgent") &&  
+				incident.getUrgencyCode() == null || !incident.getUrgencyCode().equals("H")) {  
+					incident.setUrgencyCode("H");  
+				logger.info("Adjusted Urgency for incident '{}' to 'HIGH'.", incident.getTitle());  
+			}  
+		}  
+	}  
+	
+}
 
   /** Custom Validation */
   async onUpdate (req) {
