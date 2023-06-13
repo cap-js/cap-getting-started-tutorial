@@ -88,3 +88,7 @@ module.exports = IncidentsService
 ```
 
 You can read more about [Providing Services](https://cap.cloud.sap/docs/guides/providing-services/) 
+
+***
+
+Proceed with the next step: [Adding data](05_java_adding_data.md)

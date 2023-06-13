@@ -44,4 +44,6 @@ The application is now generated and in a few seconds you can see it in the `app
 
 ## Modify the UI with the Fiori Page Editor
 
+***
 
+Proceed with the next step: [Adding authorization](07_java_adding_authorization.md)

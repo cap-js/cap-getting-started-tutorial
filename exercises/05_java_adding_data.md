@@ -64,3 +64,6 @@ L;low
 Once added, the running `cds watch` will automatically refresh the data.
 In http://localhost:4004/ , you will now be able to see the data in the corresponding endpoints.
 
+***
+
+Proceed with the next step: [Adding Fiori Elements](06_java_adding_fiori_elements.md)

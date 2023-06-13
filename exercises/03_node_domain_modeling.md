@@ -85,8 +85,6 @@ Note: You can read more about [Domain Modelling](https://cap.cloud.sap/docs/guid
 
 As soon as the CDS file is saved, the running `cds watch` commands reacts immediately with the CDS application and reload of the application takes place. The embedded database of the started application will reflect the schema defined in your CDS file.
 
+***
 
-
-
-
-
+Proceed with the next step: [Creating services](04_node_creating_services.md)

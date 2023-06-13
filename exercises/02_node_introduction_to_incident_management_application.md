@@ -56,3 +56,7 @@ It tells you that there is no model and no service definitions yet that it can s
 <br/>
 
 We will be adding the service definitions in the upcoming modules.
+
+***
+
+Proceed with the next step: [Domain modeling](03_node_domain_modeling.md)

@@ -47,3 +47,7 @@ You can check the access to the application by using these credentials now.
 <br/>
 
 To learn more about Authorization and Authentication methods, you can refer [here](https://cap.cloud.sap/docs/guides/authorization#prerequisite-authentication)
+
+***
+
+Proceed with the next step: [(Optional) Add multitenancy](08_node_optional_add_multitenancy.md)

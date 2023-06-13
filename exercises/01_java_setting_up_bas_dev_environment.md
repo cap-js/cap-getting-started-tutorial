@@ -32,3 +32,7 @@ Here, you can name the dev space as `incidents_mgmt` and choose `Full Stack Clou
 <br/>
 
 ![Open Terminal](./assets/Terminal.png)
+
+***
+
+Proceed with the next step: [Introduction to the Incident Management application](02_java_introduction_to_incident_management_application.md)
