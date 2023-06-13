@@ -83,7 +83,7 @@ type City : String;
 Note: You can read more about [Domain Modelling](https://cap.cloud.sap/docs/guides/domain-modeling), [entites](https://cap.cloud.sap/docs/cds/cdl#entities) and [types](https://cap.cloud.sap/docs/cds/cdl#types).
 <br/>
 
-As soon as the CDS file is saved, the running `cds watch` commands reacts immediately with the CDS application and reload of the application takes place. The embedded database of the started application will reflect the schema defined in your CDS file.
+As soon as the CDS file is saved, the running `mvn cds:watch` commands reacts immediately with the CDS application and reload of the application takes place. The embedded database of the started application will reflect the schema defined in your CDS file.
 
 ***
 

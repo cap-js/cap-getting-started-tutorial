@@ -14,9 +14,9 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 
 3. Choose `Next`
 
-4. In the next dialog, choose `Use a Local CAP Project` and choose your current `incidents-mgmt` project.
+4. In the next dialog, choose `Use a Local CAP Project` and choose your current `incidents` project.
 
-5. Select the `IncidentsService(Node.js`) as the OData service and choose `Next`
+5. Select the `IncidentsService(Java)` as the OData service and choose `Next`
 <br/>
 
 ![Data Source Selection](./assets/data_source.png)

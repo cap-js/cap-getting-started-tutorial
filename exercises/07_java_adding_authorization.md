@@ -23,24 +23,30 @@ Once the server is reloaded, a pop-up will come on IncidentsService, we can chec
 
 `@sap/cds` has some users as default configuration. You can use `alice` as username to check for the `admin` right and `bob` as username to check for when the `admin` right are not there. When you use `alice`, you will be able to access the application whereas when you use `bob`, it will throw an error.
 
-We can define the roles in our `package.json` by adding the following snippet in there:
+We can define the roles in our `srv/src/main/resources/application.yaml` by adding the following snippet in there *under the cds node*:
 
-```sh
-"cds":{
-    "requires":{
-        "auth":{
-            "kind": "basic",
-            "users": {
-                "admin1": {
-                    "password": "abcd",
-                    "roles": [
-                        "admin"
-                    ]
-                }
-            }
-        }
-    }
-}
+```yaml
+    security.mock.users:
+    - name: admin1
+      password: abcd
+      roles:
+      - admin
+```
+
+The complete `srv/src/main/resources/application.yaml` file needs to look like this:
+
+```yaml
+---
+spring:
+  config.activate.on-profile: default
+cds:
+  datasource:
+    auto-config.enabled: false
+  security.mock.users:
+    - name: admin1
+      password: abcd
+      roles:
+      - admin
 ```
 
 You can check the access to the application by using these credentials now.
