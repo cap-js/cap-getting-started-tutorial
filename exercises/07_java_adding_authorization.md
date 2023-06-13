@@ -26,11 +26,11 @@ Once the server is reloaded, a pop-up will come on IncidentsService, we can chec
 We can define the roles in our `srv/src/main/resources/application.yaml` by adding the following snippet in there *under the cds node*:
 
 ```yaml
-    security.mock.users:
-    - name: admin1
-      password: abcd
-      roles:
-      - admin
+  security.mock.users:
+  - name: admin1
+    password: abcd
+    roles:
+    - admin
 ```
 
 The complete `srv/src/main/resources/application.yaml` file needs to look like this:

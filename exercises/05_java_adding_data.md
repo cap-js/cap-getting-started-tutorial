@@ -8,6 +8,12 @@ Since we already have an SQLite in-memory database that was automatically create
 
 ### Adding Initial Data in `.csv` Files
 
+First, make sure that you're in the root directory of the `incidents` application. If you're in the `srv` folder go one up with this command:
+
+```sh
+cd ..
+```
+
 You can fill your database with initial data by adding a few plain CSV files. For each entity that you want to populate with mock-data, you can add the mockdata files using the naming convention `{enityNamespace}-{entityName}.csv` files in the `db/data` folder or use the following command:
 
 ```sh
@@ -61,8 +67,8 @@ M;medium
 L;low
 ```
 
-Once added, the running `cds watch` will automatically refresh the data.
-In http://localhost:4004/ , you will now be able to see the data in the corresponding endpoints.
+Once added, the running `mvn cds:watch` will automatically refresh the data.
+In http://localhost:8080/ , you will now be able to see the data in the corresponding endpoints.
 
 ***
 

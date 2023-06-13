@@ -28,19 +28,12 @@ In BAS:
 2. Choose `incidents` from the file explorer.
 <br/>
 
-//TODO fix screenshot for Java
-![Open Application](./assets/incidents_mgmt.png)
+![Open Application](./assets/incidents_mgmt_java.png)
 <br/>
 
 Basic CAP structure containing folder `app`, `db` and `srv` has been created. 
 
-Open the terminal and use the command: 
-```sh
-npm install
-``` 
-to install the dependencies.
-
-Start the CAP server by using `mvn cds:watch` in the Integrated Terminal.
+Open the terminal and start the CAP server by using `mvn cds:watch` in the Integrated Terminal.
 
 ```sh
 cd srv

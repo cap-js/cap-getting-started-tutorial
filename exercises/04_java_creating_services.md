@@ -52,7 +52,7 @@ The application is reloaded, open the url mentioned in the terminal in your brow
 
 You can add custom code to deal with the specific domain logic of your application.
 
-- Create a new folder `handler` in the `srv/src/main/java/customer/incidents` folder.
+- Create a new folder `handlers` in the `srv/src/main/java/customer/incidents` folder.
 - Create a new file `IncidentUrgencyHandler.java` in that folder and add the following content:
 
 ```java
