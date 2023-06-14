@@ -73,7 +73,6 @@ import com.sap.cds.services.handler.annotations.ServiceName;
 
 import cds.gen.incidentsservice.Incidents;
 import cds.gen.incidentsservice.IncidentsService_;
-import cds.gen.incidentsservice.Incidents_;
 
 @Component
 @ServiceName(IncidentsService_.CDS_NAME)  
