@@ -9,20 +9,9 @@ This repository contains the material for the SAP d-com 2023 session called *CAP
 - User credentials for accessing the SAP Business Application Studio.
 - A internet browser. Preferrably Google Chrome. 
 
-## Overview
-
-This template is a suggested approach in structuring you content. 
-
-You can use the `Use this template` button to clone this template.
-
-Feel free to add/modify sections according to your needs.
-
-- Please try to break down your contents to logical exercises with links for navigation.
-- You may use & modify the [session-feedback-template](.github/ISSUE_TEMPLATE/session-feedback-template.md) to create questionnaires for the feedback of the session.
-
 ## Exercises
 
-** Important: ** CAP has 2 runtime stacks: CAP Java and CAP node.js
+**Important:** CAP has 2 runtime stacks: CAP Java and CAP node.js
 
 For this tutorial we describe the steps for both stacks. You're invited to test both. In a real world project you need to decide for one stack based on your team's skillset and the (non-functional) requirements of your project.
 
