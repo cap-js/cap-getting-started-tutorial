@@ -31,7 +31,7 @@ Here, you can name the dev space as `incidents_mgmt` and choose `Full Stack Clou
 6. Once your space is opened you need to perform a small adjustment to the settings in order to have a smooth developer experience while developing your CAP Java application. Click the cog-wheel in the bottom left corner and then click "settings". Perform the following 2 steps.
 <br/>
 
-7. At first you need to *enable* "autobuild" for Java artifacts:
+7. At first you need to *enable* "autobuild" for Java artifacts. This is needed to have quick turnarounds with Spring Boot DevTools while using `mvn cds:watch`.
 <br/>
 
 ![enable Java autobuild](./assets/java_auto_build.png)
