@@ -42,6 +42,12 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 
 The application is now generated and in a few seconds you can see it in the `app` folder of your project. It contains a `incidents` and a `webapp` folder with a `Component.js` file that is characteristic for an SAPUI5 app.
 
+11. Browse the generated application
+
+Once the application generation wizard is completed the `app` folder contains a new folder with the generated application. Start the `cds watch` command in case it's not running anymore and open the index page in your browser. To do so, open the Command Palette (`Setting` -> Command Palette`` and choose `Ports: Preview`. There, select the entry with port 4004 (the CAP node.js default port). Now, the index page of your CAP application is displayed and has an entry for the just generated UI. Navigate the link and browse the new application.
+
+In the application you can click the "go" button on the right hand side and load all incidents from the database. By clicking an incident from the list you can open the details view. Use the browser's `back` button to navigate back to the list.
+
 ***
 
 Proceed with the next step: [Adding authorization](07_node_adding_authorization.md)
