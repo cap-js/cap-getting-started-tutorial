@@ -42,8 +42,6 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 
 The application is now generated and in a few seconds you can see it in the `app` folder of your project. It contains a `incidents` and a `webapp` folder with a `Component.js` file that is characteristic for an SAPUI5 app.
 
-## Modify the UI with the Fiori Page Editor
-
 ***
 
 Proceed with the next step: [Adding authorization](07_node_adding_authorization.md)
