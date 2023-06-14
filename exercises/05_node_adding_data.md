@@ -14,7 +14,7 @@ You can fill your database with initial data by adding a few plain CSV files. Fo
 cds add data
 ```
 
-It will generate `.csv` templates which can be filled with the following content:
+It will generate `.csv` templates which can be filled with the following content. Please make sure that you replace the full content of the file including the header columns.
 
 `sap.capire.incidents-Conversations.csv`
 ```csv
