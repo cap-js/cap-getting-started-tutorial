@@ -62,7 +62,10 @@ L;low
 ```
 
 Once added, the running `cds watch` will automatically refresh the data.
-In http://localhost:4004/ , you will now be able to see the data in the corresponding endpoints.
+
+You can open the application by using `Command Palette` (F1 or Command+Shift+P) -> `Ports: Preview` and selecting the port 4004. Alternatively, you can click the http://localhost:4004 link in the `cds watch` log output (which is automatically redirected to the correct cloud URL). In your browser, you will now be able to see the data in the corresponding endpoints.
+
+In contrast to other tutorials that you run on your local machine you can't use localhost because you don't develop on your local host. ;)
 
 ***
 
