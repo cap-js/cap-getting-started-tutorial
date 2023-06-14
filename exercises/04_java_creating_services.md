@@ -56,7 +56,7 @@ You can add custom code to deal with the specific domain logic of your applicati
 - Create a new file `IncidentUrgencyHandler.java` in that folder and add the following content:
 
 ```java
-package customer.incidents.handler;
+package customer.incidents.handlers;
 
 
 import java.util.List;
@@ -91,15 +91,6 @@ public class IncidentUrgencyHandler implements EventHandler {
 	}  
 	
 }
-
-  /** Custom Validation */
-  async onUpdate (req) {
-    const { status_code } = await SELECT.one(req.subject, i => i.status_code).where({ID: req.data.ID})
-    if (status_code === 'C')
-      return req.reject(`Can't modify a closed incident`)
-  }
-}
-module.exports = IncidentsService
 ```
 
 You can read more about [Providing Services](https://cap.cloud.sap/docs/guides/providing-services/) 
