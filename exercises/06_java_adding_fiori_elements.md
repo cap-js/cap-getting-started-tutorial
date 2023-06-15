@@ -37,10 +37,66 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 
 9. In the upcoming steps, leave the default value for all other settings.
 
-10. Choose `Finish` to generate the application.
+10. Choose `Finish` to generate the application. The application is now generated and in a few seconds you can see it in the `app` folder of your project. It contains a `incidents` and a `webapp` folder with a `Component.js` file that is characteristic for an SAPUI5 app. The process is finished when the "Application Information" screen for the newly generated UI appears.
+
+11. In order to have a working UI you need to add the following content to your UI annotations in `app/incidents/annotations.cds`:
+
+```cds
+annotate service.Incidents with @(
+    UI.LineItem : [
+        {
+            $Type : 'UI.DataField',
+            Value : title,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'urgency_code',
+            Value : urgency_code,
+        },
+        {
+            $Type : 'UI.DataField',
+            Label : 'status_code',
+            Value : status_code,
+        },
+    ]
+);
+annotate service.Incidents with @(
+    UI.FieldGroup #GeneratedGroup1 : {
+        $Type : 'UI.FieldGroupType',
+        Data : [
+            {
+                $Type : 'UI.DataField',
+                Value : title,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'urgency_code',
+                Value : urgency_code,
+            },
+            {
+                $Type : 'UI.DataField',
+                Label : 'status_code',
+                Value : status_code,
+            },
+        ],
+    },
+    UI.Facets : [
+        {
+            $Type : 'UI.ReferenceFacet',
+            ID : 'GeneratedFacet1',
+            Label : 'General Information',
+            Target : '@UI.FieldGroup#GeneratedGroup1',
+        },
+    ]
+);
+```
+
 <br/>
 
-The application is now generated and in a few seconds you can see it in the `app` folder of your project. It contains a `incidents` and a `webapp` folder with a `Component.js` file that is characteristic for an SAPUI5 app.
+12. Browse the generated appliction. Start the `mvn cds:watch` command (in the `srv` folder) in case it's not running anymore and open the index page in your browser. To do so, open the Command Palette (`Setting` -> `Command Palette` and choose `Ports: Preview`. There, select the entry with port 8080 (the CAP Java default port). Now append `/incidents/webapp/index.html` to the URL in your browser`s address bar.
+
+13. In the application you can click the "go" button on the right hand side and load all incidents from the database. By clicking an incident from the list you can open the details view. Use the browser's `back` button to navigate back to the list.
+
 
 ***
 
