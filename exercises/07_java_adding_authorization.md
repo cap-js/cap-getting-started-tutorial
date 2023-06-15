@@ -49,7 +49,7 @@ cds:
       - admin
 ```
 
-Addtionally, you need to add the Spring Boot Security starter module to the `<dependencies>` section in the `pom.xml` fil` in the `srv` folder of your application:
+Addtionally, you need to add the Spring Boot Security starter module to the `<dependencies>` section in the `pom.xml` file in the `srv` folder of your application:
 
 ```xml
 		<dependency>
