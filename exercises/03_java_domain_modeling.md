@@ -83,7 +83,16 @@ type City : String;
 Note: You can read more about [Domain Modelling](https://cap.cloud.sap/docs/guides/domain-modeling), [entites](https://cap.cloud.sap/docs/cds/cdl#entities) and [types](https://cap.cloud.sap/docs/cds/cdl#types).
 <br/>
 
-As soon as the CDS file is saved, the running `mvn cds:watch` commands reacts immediately with the CDS application and reload of the application takes place. The embedded database of the started application will reflect the schema defined in your CDS file.
+As soon as the CDS file is saved, you can start your CAP Java application with 
+
+```
+cd srv
+mvn cds:watch
+```
+
+The `mvn cds:watch` commadn keeps an eye on your changes (including the CDS files) and triggers a rebuild and restart automatically. 
+
+On the started application you won't be able to see much, yet. There are no definitions for the service interface of your application. You'll create them in the next step. :)
 
 ***
 
