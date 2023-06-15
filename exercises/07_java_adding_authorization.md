@@ -62,7 +62,3 @@ You can check the access to the application by using the new credentials (userna
 <br/>
 
 To learn more about Authorization and Authentication methods, you can refer [here](https://cap.cloud.sap/docs/guides/authorization#prerequisite-authentication)
-
-***
-
-Proceed with the next step: [(Optional) Add multitenancy](08_java_optional_add_multitenancy.md)
