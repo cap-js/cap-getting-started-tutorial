@@ -14,7 +14,7 @@ First, make sure that you're in the root directory of the `incidents` applicatio
 cd ..
 ```
 
-You can fill your database with initial data by adding a few plain CSV files. For each entity that you want to populate with mock-data, you can add the mockdata files using the naming convention `{enityNamespace}-{entityName}.csv` files in the `db/data` folder or use the following command:
+You can fill your database with initial data by adding a few plain CSV files. For each entity that you want to populate with mock-data, you can add the mockdata files using the naming convention `{enityNamespace}-{entityName}.csv` files in the `db/data` folder or use the following command (either in a new terminal or you stop the running `mvn cds watch and restart it later):
 
 ```sh
 cds add data
