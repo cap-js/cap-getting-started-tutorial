@@ -4,7 +4,7 @@
 `cds watch` automatically bootstraps a database by default - unless told otherwise. It drastically speeds up turn-around times in local development and furthermore allows self-contained testing.
 <br/>
 
-Since we already have an SQLite in-memory database that was automatically created, let's now fill it with some test data.
+Since we already have an H2 in-memory database that was automatically created, let's now fill it with some test data.
 
 ### Adding Initial Data in `.csv` Files
 
