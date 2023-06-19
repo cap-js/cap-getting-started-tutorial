@@ -33,25 +33,8 @@ In BAS:
 
 Basic CAP structure containing folder `app`, `db` and `srv` has been created. 
 
-Open the terminal and start the CAP server by using `mvn cds:watch` in the Integrated Terminal.
+For now, the CAP Java application cannot serve any purpose as it has neither defined a domain model not a service interface. This will be done in the following steps.
 
-```sh
-cd srv
-mvn cds:watch
-```
-
-The CAP server serves all the CAP sources from your project. It also "watches" all the files in your projects and conveniently restarts whenever you save a file. Changes you have made will immediately be served without you having to do anything.
-<br/>
-
-Currently, it will show 
-```
-[ERROR] CdsMojo: [ERROR] No .cds models found, please specify one as an argument 
-```
-
-It tells you that there is no model and no service definitions yet that it can compile and serve.
-<br/>
-
-We will be adding the service definitions in the upcoming modules.
 
 ***
 
