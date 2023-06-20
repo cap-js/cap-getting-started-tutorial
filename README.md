@@ -1,12 +1,11 @@
-# Hands on title
+# Getting started with CAP 
 
 ## Description
 
-This repository contains the material for the SAP d-com 2023 session called *CAP - getting started*.
+In this hands-on tutorial you will learn to create your first CAP application. It will be a very basic, yet fully functional application including a Fiori Elements UI.
 
 ## Prerequisite
 
-- User credentials for accessing the SAP Business Application Studio.
 - A internet browser. Preferrably Google Chrome. 
 
 ## Exercises
@@ -24,7 +23,6 @@ For this tutorial we describe the steps for both stacks. You're invited to test 
 5. [Adding data](exercises/05_java_adding_data.md)
 6. [Adding Fiori Elements UI](exercises/06_java_adding_fiori_elements.md)
 7. [Adding authorization](exercises/07_java_adding_authorization.md)
-8. [Otional: Adding Multitenancy](exercises/08_java_optional_add_multitenancy.md)
 
 ### CAP node.js
 
