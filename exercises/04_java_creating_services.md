@@ -45,7 +45,7 @@ service IncidentsService {
 The application is reloaded, open the url mentioned in the terminal in your browser and you can see the generic index.html page:
 <br/>
 
-![Endpoints](assets/services.png)
+![Endpoints](assets/services_java.png)
 <br/>
 
 ## Adding Custom Logic
