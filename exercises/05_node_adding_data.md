@@ -8,7 +8,7 @@ Since we already have an SQLite in-memory database that was automatically create
 
 ### Adding Initial Data in `.csv` Files
 
-You can fill your database with initial data by adding a few plain CSV files. For each entity that you want to populate with mock-data, you can add the mockdata files using the naming convention `{enityNamespace}-{entityName}.csv` files in the `db/data` folder or use the following command:
+You can fill your database with initial data by adding a few plain CSV files. For each entity that you want to populate with mock-data, you can add the mockdata files using the naming convention `{enityNamespace}-{entityName}.csv` files in the `db/data` folder or use the following command (either in a new terminal or you stop the running `cds watch` for now):
 
 ```sh
 cds add data
