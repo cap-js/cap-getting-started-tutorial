@@ -90,7 +90,7 @@ cd srv
 mvn cds:watch
 ```
 
-The `mvn cds:watch` commadn keeps an eye on your changes (including the CDS files) and triggers a rebuild and restart automatically. 
+The `mvn cds:watch` command keeps an eye on your changes (including the CDS files) and triggers a rebuild and restart automatically. 
 
 On the started application you won't be able to see much, yet. There are no definitions for the service interface of your application. You'll create them in the next step. :)
 
