@@ -50,4 +50,4 @@ To learn more about Authorization and Authentication methods, you can refer [her
 
 ***
 
-Proceed with the next step: [(Optional) Add multitenancy](08_node_optional_add_multitenancy.md)
+Congratulations! You finished the CAP Getting Started tutorial.
