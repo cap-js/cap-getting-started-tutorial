@@ -22,7 +22,7 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 ![Data Source Selection](./assets/data_source_java.png)
 <br/>
 
-6. Select `Incidents` as the main entity, `conversations` as the Navigation entity. Choose the option `Yes` to add table columns automatically. Choose `Next`
+6. Select `Incidents` as the main entity, `conversations` as the Navigation entity. Choose `Next`
 <br/>
 
 ![Entity Selection](./assets/entity_selection.png)
