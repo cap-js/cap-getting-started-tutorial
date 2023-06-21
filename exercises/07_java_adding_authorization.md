@@ -62,3 +62,7 @@ You can check the access to the application by using the new credentials (userna
 <br/>
 
 To learn more about Authorization and Authentication methods, you can refer [here](https://cap.cloud.sap/docs/guides/authorization#prerequisite-authentication)
+
+***
+
+Congratulations! You finished the CAP Getting Started tutorial.
