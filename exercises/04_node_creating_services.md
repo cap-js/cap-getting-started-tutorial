@@ -2,7 +2,7 @@
 
 After defining the model, the running application is still not exposing any service endpoints.
 
-It's a good practice in CAP to create one service per use case. Hence, ee will add two service definitions to it for the different use cases:
+It's a good practice in CAP to create one service per use case. Hence, we will add two service definitions to it for the different use cases:
 
 - A `CustomersService` for customers to create and browse their own incidents.
 - An `IncidentsService` for support engineers to process incidents created by customers.
