@@ -1,6 +1,6 @@
 # Adding Data to your database
 
-## Using In-Memory Database
+## Using a In-Memory Database
 `cds watch` automatically bootstraps a database by default - unless told otherwise. It drastically speeds up turn-around times in local development and furthermore allows self-contained testing.
 <br/>
 
