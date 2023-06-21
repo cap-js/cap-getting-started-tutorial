@@ -23,7 +23,7 @@ Once the server is reloaded, a pop-up will come on IncidentsService, we can chec
 
 `@sap/cds` has some users as default configuration. You can use `alice` as username to check for the `admin` right and `bob` as username to check for when the `admin` right are not there. When you use `alice`, you will be able to access the application whereas when you use `bob`, it will throw an error.
 
-We can define the roles in our `package.json` by adding the following snippet in there:
+We can define the roles in our `package.json` by adding the following snippet as node below the top level object:
 
 ```sh
 "cds":{
