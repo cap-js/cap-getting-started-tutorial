@@ -9,7 +9,7 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 2. Choose application type `SAP Fiori` and template `List Report Page`.
 <br/>
 
-![Template Selection](./assets/template_selection.png)
+![Template Selection](./assets/template_selection_java.png)
 <br/>
 
 3. Choose `Next`
@@ -19,7 +19,7 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 5. Select the `IncidentsService(Node.js`) as the OData service and choose `Next`
 <br/>
 
-![Data Source Selection](./assets/data_source.png)
+![Data Source Selection](./assets/data_source_java.png)
 <br/>
 
 6. Select `Incidents` as the main entity, `conversations` as the Navigation entity. Choose the option `Yes` to add table columns automatically. Choose `Next`
@@ -32,7 +32,7 @@ SAP Fiori elements provides designs for UI patterns and predefined floorplans fo
 8. Enter `ns` as the namespace.
 <br/>
 
-![Project Attributes](./assets/project_attributes.png)
+![Project Attributes](./assets/project_attributes_java.png)
 <br/>
 
 9. In the upcoming steps, leave the default value for all other settings.
