@@ -31,9 +31,9 @@ In BAS:
 ![Open Application](./assets/incidents_mgmt_java.png)
 <br/>
 
-Basic CAP structure containing folder `app`, `db` and `srv` has been created. 
+Basic CAP structure containing folder `db` and `srv` has been created. 
 
-For now, the CAP Java application cannot serve any purpose as it has neither defined a domain model not a service interface. This will be done in the following steps.
+For now, the CAP Java application cannot serve any purpose as it has neither defined a domain model nor a service interface. This will be done in the following steps.
 
 
 ***
