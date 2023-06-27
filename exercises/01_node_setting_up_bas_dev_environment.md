@@ -1,8 +1,8 @@
 # Setting up Dev Environment
 
-1. Open the [Business Application Studio](https://lcapteched.eu10cf.applicationstudio.cloud.sap/index.html)
+1. Open the [Business Application Studio](https://lcapteched.eu10cf.applicationstudio.cloud.sap/index.html) -> open this page in a new browser tab
 
-2. For the login you'll need credentials that you can generate [here](https://cap-enablement-team.launchpad.cfapps.eu12.hana.ondemand.com/a6f9aec4-7c3b-4059-a3b6-4b66229a7926.sapfecapcredentials.credentialsservice-0.0.1/index.html). Retrieve a user by clicking the `Get fresh credentials` button.
+2. For the login you'll need credentials that you can generate [here](https://cap-enablement-team.launchpad.cfapps.eu12.hana.ondemand.com/a6f9aec4-7c3b-4059-a3b6-4b66229a7926.sapfecapcredentials.credentialsservice-0.0.1/index.html) -> open this page in a new browser tab. Retrieve a user by clicking the `Get fresh credentials` button.
 
 3. Once logged in, click on `Create Dev Space`
 <br/>
