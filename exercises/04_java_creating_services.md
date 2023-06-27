@@ -2,7 +2,7 @@
 
 After defining the model, the running application is still not exposing any service endpoints.
 
-It's a good practice in CAP to create one service per use case. Hence, we will add two service definitions to it for the different use cases:
+It's a good practice in CAP to create one service per use case. Hence, we will add two service definitions for the different use cases:
 
 - A `CustomersService` for customers to create and browse their own incidents.
 - An `IncidentsService` for support engineers to process incidents created by customers.
@@ -42,7 +42,7 @@ service IncidentsService {
 }
 ```
 
-The application is reloaded, open the url mentioned in the terminal in your browser and you can see the generic index.html page:
+The application is reloaded, open the url mentioned in the terminal in your browser and you can see the generic index.html page. If you don't find the link in the terminal output, you can also use the "Ports Preview" (press `F1 and type `Ports`) and select port `8080`.
 <br/>
 
 ![Endpoints](assets/services_java.png)
