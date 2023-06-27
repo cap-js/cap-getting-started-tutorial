@@ -83,7 +83,7 @@ type City : String;
 Note: You can read more about [Domain Modelling](https://cap.cloud.sap/docs/guides/domain-modeling), [entites](https://cap.cloud.sap/docs/cds/cdl#entities) and [types](https://cap.cloud.sap/docs/cds/cdl#types).
 <br/>
 
-As soon as the CDS file is saved, you can start your CAP Java application with 
+As soon as the CDS file is saved, you can start your CAP Java application. Open a terminal (like described above) and run the commands
 
 ```
 cd srv
