@@ -4,13 +4,15 @@
 
 In this hands-on tutorial you will learn to create your first CAP application. It will be a very basic, yet fully functional application including a Fiori Elements UI.
 
+**Important**: We cannot monitor each laptop at the hands on booth. Thus, in case you face any problems, please come to the CAP demo pods (DP001, DP002 and DP003) and ask one of the experts! :)
+
 ## Prerequisite
 
 - A internet browser. Preferrably Google Chrome. 
 
 ## Exercises
 
-**Important:** CAP has 2 runtime stacks: CAP Java and CAP node.js
+**Hint:** CAP has 2 runtime stacks: CAP Java and CAP node.js
 
 For this tutorial we describe the steps for both stacks. You're invited to test both. In a real world project you need to decide for one stack based on your team's skillset and the (non-functional) requirements of your project.
 
