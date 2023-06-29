@@ -77,19 +77,21 @@ import cds.gen.incidentsservice.IncidentsService_;
 @Component
 @ServiceName(IncidentsService_.CDS_NAME)  
 public class IncidentUrgencyHandler implements EventHandler {
-	private static final Logger logger = LoggerFactory.getLogger(IncidentUrgencyHandler.class);
-	
-	@After(event = CqnService.EVENT_READ)  
-	public void ensureHighUrgencyForIncidentsWithUrgentInTitle(List<Incidents> incidents) {  
-		for (Incidents incident : incidents) { 
-			if (incident.getTitle().toLowerCase(Locale.ENGLISH).contains("urgent") &&  
-				incident.getUrgencyCode() == null || !incident.getUrgencyCode().equals("H")) {  
-					incident.setUrgencyCode("H");  
-				logger.info("Adjusted Urgency for incident '{}' to 'HIGH'.", incident.getTitle());  
-			}  
-		}  
-	}  
-	
+
+    private static final Logger logger = LoggerFactory.getLogger(IncidentUrgencyHandler.class);
+    @After(event = CqnService.EVENT_READ)  
+    public void ensureHighUrgencyForIncidentsWithUrgentInTitle(List<Incidents> incidents) {  
+
+        for (Incidents incident : incidents) {
+            if (incident.getTitle() != null &&
+				incident.getTitle().toLowerCase(Locale.ENGLISH).contains("urgent") &&  
+                incident.getUrgencyCode() == null || !"H".equals(incident.getUrgencyCode())) {  
+
+                incident.setUrgencyCode("H");  
+                logger.info("Adjusted Urgency for incident '{}' to 'HIGH'.", incident.getTitle());  
+            }  
+        }  
+    }  
 }
 ```
 
@@ -99,6 +101,8 @@ public class IncidentUrgencyHandler implements EventHandler {
  * Press ctrl+shift+p (the command pallette) and type "Java: Force Java Compilation"
 
 Afterwards the error markers should be gone. If not it's still not a road blocker since the `mvn cds:watch` command does not care about IDE errors. ;)
+
+In case you still run into issues with this handler (you'll see that in the stack trace of the application log) you can just comment the `@After` annotation in line 24. Then this handler will not be called at runtime.
 
 You can read more about [Providing Services](https://cap.cloud.sap/docs/guides/providing-services/) 
 
