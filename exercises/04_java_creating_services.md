@@ -93,6 +93,13 @@ public class IncidentUrgencyHandler implements EventHandler {
 }
 ```
 
+**Note:** this is the first (and last;)) time in this tutorial where you create Java code. It might happen that the Java support in BAS fails to correctly pick up the code generated from CDS files and gives some error markers in the inserted Java code. In that case you can try one of the following techniques:
+
+ * Press ctrl+shift+p (the command pallette) and type "Java: Clean Java Lanaguage Server Workspace"
+ * Press ctrl+shift+p (the command pallette) and type "Java: Force Java Compilation"
+
+Afterwards the error markers should be gone. If not it's still not a road blocker since the `mvn cds:watch` command does not care about IDE errors. ;)
+
 You can read more about [Providing Services](https://cap.cloud.sap/docs/guides/providing-services/) 
 
 ***
