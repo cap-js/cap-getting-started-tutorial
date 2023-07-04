@@ -1,4 +1,4 @@
-# HO003 - Getting started with CAP 
+# Getting started with CAP 
 
 ## Description
 
