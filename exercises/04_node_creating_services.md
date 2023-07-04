@@ -19,6 +19,7 @@ using { sap.capire.incidents as my } from '../db/schema';
 /**
  * Used by Customers to create and browse their Incidents.
  */
+@path : '/customers'
 service CustomersService {
   entity Incidents as projection on my.Incidents { *
   } excluding { modifiedBy } where customer.ID = $user;
@@ -32,6 +33,7 @@ service CustomersService {
 ```cds
 using { sap.capire.incidents as my } from '../db/schema';
 
+@path : '/incidents'
 service IncidentsService { 
   @odata.draft.enabled
   entity Incidents as projection on my.Incidents;
