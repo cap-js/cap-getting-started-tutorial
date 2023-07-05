@@ -95,7 +95,7 @@ annotate service.Incidents with @(
 
 12. Browse the generated appliction. Restart the `mvn cds:watch` command (in the `srv` folder) in case it's still running (if not just start it) and open the index page in your browser. To do so, open the Command Palette (`Setting` -> `Command Palette` and choose `Ports: Preview`. There, select the entry with port 8080 (the CAP Java default port). Now append `/incidents/webapp/index.html` to the URL in your browser`s address bar.
 
-13. In the application you can click the "go" button on the right hand side and load all incidents from the database. By clicking an incident from the list you can open the details view. Use the browser's `back` button to navigate back to the list.
+13. In the application you can click the "Go" button on the right hand side and load all incidents from the database. By clicking an incident from the list you can open the details view. Use the browser's `back` button to navigate back to the list.
 
 
 ***
