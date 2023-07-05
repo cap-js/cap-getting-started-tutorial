@@ -33,8 +33,6 @@ For this tutorial we describe the steps for both stacks. You're invited to test 
 5. [Adding data](exercises/05_node_adding_data.md)
 6. [Adding Fiori Elements UI](exercises/06_node_adding_fiori_elements.md)
 7. [Adding authorization](exercises/07_node_adding_authorization.md)
-8. [Otional: Adding Multitenancy](exercises/08_node_optional_add_multitenancy.md)
-
 
 <!-- />
 Comments
