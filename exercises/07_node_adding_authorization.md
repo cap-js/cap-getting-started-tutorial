@@ -1,6 +1,6 @@
 # Authorization and Authentication
 
-Authorization means restricting access to data by adding respective declarations to CDS models, which are then enforced in service implementations. Individual privileges are given by adding such declarations. While, authorization verifies the user's identity and the presented claims such as granted roles and tenant membership.
+Authorization means restricting access to data by adding respective declarations to CDS models, which are then enforced in service implementations. Individual privileges are given by adding such declarations. Authentication verifies the user's identity and the presented claims such as granted roles and tenant membership.
 
 ## Prepare User Authentication and Authorization (XSUAA) Setup
 
@@ -21,24 +21,24 @@ service IncidentsService @(requires: 'admin') {
 This will make the incidents service accesible to only the `admin` roles.
 Once the server is reloaded, a pop-up will come on IncidentsService, we can check our implementation here.
 
-We can define the roles in our `package.json` by adding the following snippet as node *below the top level object*:
+`@sap/cds` has some users as default configuration. You can use `alice` as username to check for the `admin` role and `bob` as username to check for when the `admin` role is not there - both users don't require a password. When you use `alice`, you will be able to access the application whereas when you use `bob`, it will throw an error.
+
+We can define the roles in our `.cdsrc.json` by adding the following snippet as node *below the top level object*:
 
 ```sh
-"cds":{
-    "requires":{
-        "auth":{
-            "kind": "basic",
-            "users": {
-                "admin1": {
-                    "password": "abcd",
-                    "roles": [
-                        "admin"
-                    ]
+"requires":{
+    "auth":{
+        "kind": "basic",
+        "users": {
+            "admin1": {
+                "password": "abcd",
+                "roles": [
+                    "admin"
+                ]
                 }
             }
         }
     }
-}
 ```
 
 You can check the access to the application by using these credentials now.
