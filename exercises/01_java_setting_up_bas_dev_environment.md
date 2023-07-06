@@ -1,8 +1,8 @@
 # Setting up Dev Environment
+1. For SAP internal users (inside SAP network) you can use the following link to accesss BAS: https://go.sap.corp/bas_cap
 
-1. Open the [Business Application Studio](https://lcapteched.eu10cf.applicationstudio.cloud.sap/index.html) -> open this page in a new browser tab
-
-2. For the login you'll need credentials that you can generate [here](https://cap-enablement-team.launchpad.cfapps.eu12.hana.ondemand.com/a6f9aec4-7c3b-4059-a3b6-4b66229a7926.sapfecapcredentials.credentialsservice-0.0.1/index.html) -> open this page in a new browser tab. Retrieve a user by clicking the `Get fresh credentials` button.
+ 
+2. All others can use the [Business Application Studio](https://lcapteched.eu10cf.applicationstudio.cloud.sap/index.html) -> open this page in a new browser tab. For the login you'll need credentials that you can generate [here](https://cap-enablement-team.launchpad.cfapps.eu12.hana.ondemand.com/a6f9aec4-7c3b-4059-a3b6-4b66229a7926.sapfecapcredentials.credentialsservice-0.0.1/index.html) -> open this page in a new browser tab. Retrieve a user by clicking the `Get fresh credentials` button.
 
 3. Once logged in, click on `Create Dev Space`
 <br/>
