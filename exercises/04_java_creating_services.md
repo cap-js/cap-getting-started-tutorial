@@ -104,7 +104,7 @@ Afterwards the error markers should be gone. If not it's still not a road blocke
 
 In case you still run into issues with this handler (you'll see that in the stack trace of the application log) you can just comment the `@After` annotation in line 24. Then this handler will not be called at runtime.
 
-You can read more about [Providing Services](https://cap.cloud.sap/docs/guides/providing-services/) 
+You can read more about [Providing Services](https://cap.cloud.sap/docs/guides/providing-services) 
 
 ***
 
